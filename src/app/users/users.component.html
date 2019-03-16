@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let user of (users$ | async)">
+    {{ user.name }} <button (click)="seleziona(user)">Seleziona</button>
+  </li>
+</ul>

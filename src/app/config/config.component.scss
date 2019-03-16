@@ -1,0 +1,20 @@
+.adminPanel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  height: 30vh;
+  position: relative;
+}
+
+.label {
+  font-size: 2rem;
+}
+
+.value {
+  font-size: 3rem;
+  font-weight: 700;
+}

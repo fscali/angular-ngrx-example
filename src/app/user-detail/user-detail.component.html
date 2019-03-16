@@ -1,0 +1,9 @@
+<div *ngIf="(user$ | async)">
+  <h3>{{ (user$ | async).name }}</h3>
+
+  <ul>
+    <li>{{ (user$ | async).id }}</li>
+    <li>{{ (user$ | async).cardNumber }}</li>
+    <li>{{ (user$ | async).cardType }}</li>
+  </ul>
+</div>
