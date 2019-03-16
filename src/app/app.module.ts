@@ -15,13 +15,15 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ConfigComponent } from './config/config.component';
 import { UsersComponent } from './users/users.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { ChatBotComponent } from './chat-bot/chat-bot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConfigComponent,
     UsersComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    ChatBotComponent
   ],
   imports: [
     BrowserModule,

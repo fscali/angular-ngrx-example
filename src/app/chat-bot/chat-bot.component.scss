@@ -1,0 +1,68 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 5rem;
+  width: 300px;
+  height: 400px;
+  border: 1px solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 0;
+  border-color: #ddd;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.header {
+  height: 10%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-bottom: 1px solid #ddd;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  &:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+}
+.input {
+  height: 15%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-top: 1px solid #ddd;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body {
+  flex: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.input-text {
+  display: inline-block;
+  //width: 100%;
+  padding: 2rem 1rem;
+  border: 0;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+:host.minimized {
+  height: auto;
+
+  .body,
+  .input {
+    display: none;
+  }
+}
